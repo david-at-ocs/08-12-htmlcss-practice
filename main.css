@@ -5,6 +5,7 @@ border-box formatting so padding/margin doesn't effect percentage widths
 html {
   box-sizing: border-box;
 }
+
 * {
   box-sizing: inherit;
 }
@@ -56,13 +57,6 @@ header
   padding: 0 15px 0px 15px; /* Abbreviated as 0 15px; */
 }
 
-@media screen and (min-width: 1020px) {
-  .header-container {
-    width: 900px;
-    margin: 0 auto;
-  }
-}
-
 .header__logo {
   float: left;
   
@@ -78,88 +72,36 @@ header
   min-width: 72px;
 }
 
-  /*-----------------------------------------------------------------------------------
-  mobile menu
-  -----------------------------------------------------------------------------------*/
-  .hamburger {
-    float: right;
-    
-    /* Creates enough height/space that the header is also well-spaced. */
-    padding: 13px 0 8px 15px;
-  }
-
-  
-  .menu{
-    font-size: 18px;
-    background-color: #ccc;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-  }
-  
-  .menu__item {
-    border-bottom: 1px solid #ddd;
-  }
-
-  .menu__item a{
-    color: white;
-    display: block;
-    padding: 8px 0;
-  }
-  
-
-
 /*-----------------------------------------------------------------------------------
-footer
+mobile menu
 -----------------------------------------------------------------------------------*/
+.hamburger {
+  float: right;
+  
+  /* Creates enough height/space that the header is also well-spaced. */
+  padding: 13px 0 8px 15px;
+}
 
-footer {
+
+.menu{
+  font-size: 18px;
   background-color: #ccc;
-  color: white;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   text-align: center;
 }
 
-@media screen and (min-width: 1020px) {
-  .footer-container {
-    width: 900px;
-    margin: 0 auto;
-  }
+.menu__item {
+  border-bottom: 1px solid #ddd;
 }
 
-.footer-section {
-  padding: 25px 0 20px;
-  border-bottom: 1px #ddd solid;
-}
-
-.footer-section--last {
-  border-bottom: none;
-}
-
-.footer-section__header {
-  margin: 0;
-}
-
-.footer-section__links {
-  margin: 0;
-  list-style: none;
-  padding: 10px 0 0 0;
-}
-
-.footer-section__links a {
-  display: block;
+.menu__item a{
   color: white;
-  padding: 4px 0px;
-}
-
-.footer-section__social-icon {
   display: block;
-  padding-top: 10px;
+  padding: 8px 0;
 }
 
-.footer-section__social-icon img {
-  width: 30px;
-}
 
 /* ------------------------------------------------------------------------- */
 
@@ -208,103 +150,12 @@ footer {
   .menu__item a {
     color: #999;
   }
-  
-  .footer-section {
-    float: left;
-    width: 33%;
-    border-bottom: none;
-  }
 }
 
-/* ------------------------------------------------------------------------- */
-/*                             PAGE SPECIFIC STYLES                          */
-/* ------------------------------------------------------------------------- */
+/* --------------------------------- Body ------------------------------- */
 
-/*-----------------------------------------------------------------------------------
-events
------------------------------------------------------------------------------------*/
-
-.event-header {
-  color: #818486;
-  text-align: center;
-  margin: 40px 0 0;
-  padding: 0px;
+.body-container {
+  background-image: url("img/background.png");
+  background-repeat: no-repeat;
 }
 
-.event {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 15px;
-  margin-top: 30px;
-}
-
-.event--last{
-  border-bottom: none;
-}
-
-.date-box {
-  color:#C23333;
-  border: 5px solid #C23333;
-  width:75px;
-  height:75px;
-  display:block;
-  margin: 0 auto;
-  text-align:center;
-}
-
-.date-box__month {
-  text-align: center;
-  position: relative;
-  font-size: 20px;
-  top: 2px;
-  font-weight: bold;
-}
-
-.date-box__day {
-  text-align: center;
-  position: relative;
-  font-weight: bold;
-  font-size: 40px;
-  top: -1px;
-}
-
-.event__title, .event__when-where {
-  text-align: center;
-}
-
-.information-list__item dt {
-  font-weight: bold;
-}
-
-.information-list__item dd {
-  margin: 0 0 15px;
-}
-
-.information-list__item--highlighted {
-  text-align: center;
-}
-.information-list__item--highlighted dt {
-  color: #C23333;
-}
-
-@media screen and (min-width: 1020px) {
-  .date-box {
-    float: left;
-  }
-  
-  .event__info {
-    margin-left: 95px;
-  }
-  
-  .event__title {
-    margin-top: 0;
-  }
-  
-  .event__title, .event__when-where {
-    text-align: left;
-  }
-  
-  .information-list__item--highlighted {
-    text-align: left;
-  }
-  
-}
