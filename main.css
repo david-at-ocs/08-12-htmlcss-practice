@@ -1,0 +1,310 @@
+/*-----------------------------------------------------------------------------------
+border-box formatting so padding/margin doesn't effect percentage widths
+-----------------------------------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+
+/*-----------------------------------------------------------------------------------
+utilities
+-----------------------------------------------------------------------------------*/
+
+.clear {
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 1020px) {
+  .container {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+/*-----------------------------------------------------------------------------------
+general styling
+-----------------------------------------------------------------------------------*/
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "arial";
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*-----------------------------------------------------------------------------------
+header
+-----------------------------------------------------------------------------------*/
+.header {
+  padding: 0 15px 0px 15px; /* Abbreviated as 0 15px; */
+}
+
+@media screen and (min-width: 1020px) {
+  .header-container {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+.header__logo {
+  float: left;
+  
+  /* Align its top-position with the hamburger (with its newly added border). */
+  position: relative;
+  top: 10px;
+}
+
+.header__logo img {
+  width: 100%;
+
+  /* This is around the width of the image on an iPhone 5. Don't let it go smaller than this. */
+  min-width: 72px;
+}
+
+  /*-----------------------------------------------------------------------------------
+  mobile menu
+  -----------------------------------------------------------------------------------*/
+  .hamburger {
+    float: right;
+    
+    /* Creates enough height/space that the header is also well-spaced. */
+    padding: 15px 0 12px 15px;
+  }
+
+  
+  .menu{
+    font-size: 18px;
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .menu__item {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu__item a{
+    color: white;
+    display: block;
+    padding: 8px 0;
+  }
+  
+
+
+/*-----------------------------------------------------------------------------------
+footer
+-----------------------------------------------------------------------------------*/
+
+footer {
+  background-color: #ccc;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 1020px) {
+  .footer-container {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+.footer-section {
+  padding: 25px 0 20px;
+  border-bottom: 1px #ddd solid;
+}
+
+.footer-section--last {
+  border-bottom: none;
+}
+
+.footer-section__header {
+  margin: 0;
+}
+
+.footer-section__links {
+  margin: 0;
+  list-style: none;
+  padding: 10px 0 0 0;
+}
+
+.footer-section__links a {
+  display: block;
+  color: white;
+  padding: 4px 0px;
+}
+
+.footer-section__social-icon {
+  display: block;
+  padding-top: 10px;
+}
+
+.footer-section__social-icon img {
+  width: 30px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* This is based off an iPad, but it doesn't really matter. */
+@media screen and (min-width: 767px) {
+  .header__logo {
+    float: none;
+    margin: 0 auto 15px;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  header{
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .header{
+    float: left;
+    border-bottom: none;
+    width: 200px;
+  }
+  .header__logo {
+    margin: 0 0 15px;
+    width: 100%;
+  }
+  
+  .menu {
+    float: right;
+    background: #fff;
+    margin-right: 15px;
+    position: relative;
+    top: 34px;
+    font-size: 22px;
+  }
+  
+  .menu__item {
+    float: left;
+    margin-left: 15px;
+    border-bottom: none;
+  }
+  
+  .menu__item a {
+    color: #999;
+  }
+  
+  .footer-section {
+    float: left;
+    width: 33%;
+    border-bottom: none;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+/*                             PAGE SPECIFIC STYLES                          */
+/* ------------------------------------------------------------------------- */
+
+/*-----------------------------------------------------------------------------------
+events
+-----------------------------------------------------------------------------------*/
+
+.event-header {
+  color: #818486;
+  text-align: center;
+  margin: 40px 0 0;
+  padding: 0px;
+}
+
+.event {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-top: 30px;
+}
+
+.event--last{
+  border-bottom: none;
+}
+
+.date-box {
+  color:#C23333;
+  border: 5px solid #C23333;
+  width:75px;
+  height:75px;
+  display:block;
+  margin: 0 auto;
+  text-align:center;
+}
+
+.date-box__month {
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  top: 2px;
+  font-weight: bold;
+}
+
+.date-box__day {
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+  font-size: 40px;
+  top: -1px;
+}
+
+.event__title, .event__when-where {
+  text-align: center;
+}
+
+.information-list__item dt {
+  font-weight: bold;
+}
+
+.information-list__item dd {
+  margin: 0 0 15px;
+}
+
+.information-list__item--highlighted {
+  text-align: center;
+}
+.information-list__item--highlighted dt {
+  color: #C23333;
+}
+
+@media screen and (min-width: 1020px) {
+  .date-box {
+    float: left;
+  }
+  
+  .event__info {
+    margin-left: 95px;
+  }
+  
+  .event__title {
+    margin-top: 0;
+  }
+  
+  .event__title, .event__when-where {
+    text-align: left;
+  }
+  
+  .information-list__item--highlighted {
+    text-align: left;
+  }
+  
+}
