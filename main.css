@@ -62,7 +62,7 @@ h1 {
 
 h3 {
   font-size: 25px;
-  font-weight: lighter;
+  font-weight: 300;
   margin: 0px;
 }
 
@@ -71,7 +71,7 @@ h4 {
   padding: 20px;
   text-align: center;
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -245,6 +245,22 @@ mobile menu
   position: relative;
 }
 
+.content--box {
+  position: relative;
+  padding: 15px;
+  top: -3px;
+  background-color: #ccc;
+}
+
+.content--box h3 {
+  color: #054060;
+}
+
+.content--box p {
+  color: #054060;
+  font-weight: 400;
+}
+
 .overlay {
   position: absolute;
   left: 0;
@@ -261,17 +277,18 @@ mobile menu
 
 .content--blue-box {
   position: relative;
-  top: -4px;
+  top: -3px;
   background-color: #054060;
   text-align: center;
 }
 
 .content--hospital {
-  top: -5px;
+  top: -3px;
 }
 
 .content--hospital-overlay {
   top: 0px;
-  height: 187px;
+  height: 190px;
+  padding-top: 30px;
 }
 
