@@ -202,7 +202,7 @@ mobile menu
 
 /* --------------------------------- Body ------------------------------- */
 
-.body-container {
+.container {
   background-image: url("img/background.png");
   background-repeat: no-repeat;
   background-size: 200%;
