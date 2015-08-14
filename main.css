@@ -96,6 +96,7 @@ button styling
   padding: 10px;
   color: white;
   background: transparent;
+  text-transform: uppercase;
 }
 
 .button p {
@@ -299,8 +300,23 @@ mobile menu
 }
 
 .content--hospital-overlay {
-  top: 0px;
+  top: -2px;
   height: 190px;
+  padding-top: 30px;
+}
+
+.content--event-box {
+  background-color: #118db6;
+  top: -7px;
+}
+
+.content--jobs {
+  top: -7px;
+}
+
+.content--jobs-overlay {
+  top: 0px;
+  height: 168px;
   padding-top: 30px;
 }
 
