@@ -34,6 +34,10 @@ utilities
   }
 }
 
+.center {
+  display: block;
+  margin: auto;
+}
 /*-----------------------------------------------------------------------------------
 general styling
 -----------------------------------------------------------------------------------*/
@@ -234,7 +238,7 @@ mobile menu
 
 .transition {
   position: relative;
-  top: -3px;
+  top: -6px;
   background: -webkit-linear-gradient(left, #f7c342 , #e15656); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #f7c342, #e15656); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #f7c342, #e15656); /* For Firefox 3.6 to 15 */
@@ -248,7 +252,6 @@ mobile menu
 .content--box {
   position: relative;
   padding: 15px;
-  top: -3px;
   background-color: #ccc;
 }
 
@@ -259,6 +262,15 @@ mobile menu
 .content--box p {
   color: #054060;
   font-weight: 400;
+}
+
+.content--design-box-nudge {
+  top: -3px;
+}
+
+.content--video-box-nudge {
+  top: -6px;
+  padding: 25px;
 }
 
 .overlay {
