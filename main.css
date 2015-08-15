@@ -183,6 +183,7 @@ mobile menu
   .menu__item a {
     display: block;
     padding: 8px 0;
+    color: #054060;
   }
   
 }
@@ -204,8 +205,22 @@ mobile menu
   width: 180px;
 }
 
+@media (min-width: 600px) {
+  .intro {
+    width: 85%;
+    padding-left: 50px;
+    margin: auto;
+  }
+  
+  .intro h1 {
+    font-size: 30px;
+    width: 250px;
+  }
+  
+}
+
 .intro p {
-  width: 70%;
+  width: 40%;
 }
 
 .content {
