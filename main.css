@@ -27,13 +27,6 @@ utilities
   padding: 0 15px;
 }
 
-@media screen and (min-width: 1020px) {
-  .container {
-    width: 900px;
-    margin: 0 auto;
-  }
-}
-
 .center {
   display: block;
   margin: auto;
@@ -135,75 +128,68 @@ mobile menu
   padding: 13px 0 8px 15px;
 }
 
-
-.menu {
-  font-size: 18px;
-  background-color: #ccc;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-
-.menu__item {
-  border-bottom: 1px solid #ddd;
-}
-
-.menu__item a {
-  color: white;
-  display: block;
-  padding: 8px 0;
-}
-
-
-/* ------------------------------------------------------------------------- */
-
-/* This is based off an iPad, but it doesn't really matter. */
-@media screen and (min-width: 767px) {
-  .header__logo {
-    float: none;
-    margin: 0 auto 15px;
-  }
-  
-  .hamburger {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1020px) {
-  header{
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .header{
-    float: left;
-    border-bottom: none;
-    width: 200px;
-  }
-  .header__logo {
-    margin: 0 0 15px;
-    width: 100%;
-  }
-  
+@media (max-width: 600px) {
   .menu {
-    float: right;
-    background: #fff;
-    margin-right: 15px;
-    position: relative;
-    top: 34px;
-    font-size: 22px;
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    left: 0;
+    top: 40px;
+    font-size: 18px;
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
   }
-  
+
   .menu__item {
-    float: left;
-    margin-left: 15px;
-    border-bottom: none;
+    border-bottom: 1px solid #ddd;
   }
-  
+
   .menu__item a {
-    color: #999;
+    color: white;
+    display: block;
+    padding: 8px 0;
   }
 }
+
+@media (min-width: 600px) {
+  
+  .header {
+    width: 80%;
+    margin: auto;
+  }
+
+  .menu {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .menu li {
+    float: right;
+    padding: 8px 20px 0px 0px;
+  }
+
+  .menu__item a {
+    display: block;
+    padding: 8px 0;
+  }
+  
+}
+
+
+
+
 
 /* --------------------------------- Body ------------------------------- */
 
