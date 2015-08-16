@@ -125,14 +125,6 @@ mobile menu
   padding: 13px 0 8px 15px;
 }
 
-.header__navigation{
-  display: none;
-}
-
-.header__navigation.show{
-  display: block;
-}
-
 
 
 
@@ -422,6 +414,9 @@ mobile menu
   
 }
 
+
+/* -------------------------------------------- mobile site ----------------------- */
+
 @media (max-width: 600px) {
   
   .menu {
@@ -435,6 +430,14 @@ mobile menu
     padding: 0;
     list-style: none;
     text-align: center;
+  }
+
+  .header__navigation{
+    display: none;
+  }
+
+  .header__navigation.show{
+    display: block;
   }
 
   .menu__item {
