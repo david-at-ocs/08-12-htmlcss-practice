@@ -48,38 +48,40 @@
       <div class="content">
         
         <section class="content--top-row">
-          <div class="content--column-1">
+          <div class="content--column-1 float__left">
             
             <!-- includes 'spotlight' headline, goes down to 'hospital saftey' section -->
             <div class="content--column-1--top-section">
               <h2 class="content--header">Spotlight</h2>
               <div class="content--column-1--top-section--row-1">
-                <div class="content--image-box">
+                <div class="content--image-box float__left">
                   <img src="img/airplane.png">
                 </div>
-                <div class="content--box content--design-box-nudge">
+                <div class="content--box content--design-box-nudge float__right">
                   <h3>Design without compromise</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <p><a href="#">read more</a></p>
                 </div>
                 <!-- closes content--box div -->
                 
+                <div style="clear: both"></div>                
               </div>
               <!-- closes content--column-1--top-section--row-1 -->
               
               <div class="content--column-1--top-section--row-2">
-                <div class="content--blue-box">
+                <div class="content--blue-box float__left">
                   <h4>Wireless car tracking</h4>
                   <p><a href="#">read more</a></p>
                 </div>
 
-                <div class="content--image-box content--hospital">
+                <div class="content--image-box content--hospital float__right">
                   <img src="img/flower.png">
                   <div class="content--hospital-overlay overlay">
                     <h3>Hospital safety systems</h3>
                     <p><a href="#">read more</a></p>
                   </div>
                 </div>
+                <div style="clear: both"></div>
               </div>
               <!-- closes content--column-1--top-section--row-2 -->
               
@@ -88,10 +90,10 @@
            
           </div>
           <!-- closes content--column-1 -->
-          <div class="content--column-2">
+          <div class="content--column-2 float__right">
             <h2 class="content--header transition">Inside the lab</h2>
-            <div class="content--box content--video-box-nudge">
-              <img class="center" src="img/video.png">
+            <div class="content--video-box content--video-box-nudge">
+              <img src="img/video.png">
               <h3>What will you make today?</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <p><a href="#">read more</a></p>
@@ -99,15 +101,25 @@
           </div>
           <!-- closes content--column-2 div -->
           
+          <div style="clear: both"></div>
         </section>
         <!-- closes content--top-row section -->
         
         <section class="content--bottom-row">
-          <div class="content--column-1">
-            <div class="content--box content--event-box">
-              <h3>Embedded world 2015</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...  </p>
-              <button class="button intro--learn-more">view all events</button>
+          <div class="content--column-1 float__left">
+            <div class="content--event-box">
+              <div class="date float__left">
+                <div class="date__top-border transition"></div>
+                <div class="date--content">
+                  <h3>23</h3>
+                  <p>July</p>
+                </div>
+              </div>
+              <div class="content--event-box--info">
+                <h3>Embedded world 2015</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...  </p>
+                <button class="button intro--learn-more">view all events</button>
+              </div>
             </div>
           </div>
           <!-- closes content--column-1 div -->
@@ -117,7 +129,7 @@
               <img src="img/blurryOlivia.png">
               <div class="content--jobs-overlay overlay">
                 <h4>Jobs at Echelon</h4>
-              <button class="center button">search jobs</button>
+              <button class="button">search jobs</button>
               </div>
             </div>
           </div>

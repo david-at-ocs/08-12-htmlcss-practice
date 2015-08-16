@@ -27,10 +27,7 @@ utilities
   padding: 0 15px;
 }
 
-.center {
-  display: block;
-  margin: auto;
-}
+
 /*-----------------------------------------------------------------------------------
 general styling
 -----------------------------------------------------------------------------------*/
@@ -128,65 +125,9 @@ mobile menu
   padding: 13px 0 8px 15px;
 }
 
-@media (max-width: 600px) {
-  .menu {
-    position: absolute;
-    visibility: hidden;
-    width: 100%;
-    left: 0;
-    top: 40px;
-    font-size: 18px;
-    background-color: #ccc;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-  }
 
-  .menu__item {
-    border-bottom: 1px solid #ddd;
-  }
 
-  .menu__item a {
-    color: white;
-    display: block;
-    padding: 8px 0;
-  }
-}
 
-@media (min-width: 600px) {
-  
-  .header {
-    width: 80%;
-    margin: auto;
-  }
-
-  .menu {
-    font-size: 10px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  .menu li {
-    float: right;
-    padding: 8px 20px 0px 0px;
-  }
-
-  .menu__item a {
-    display: block;
-    padding: 8px 0;
-    color: #054060;
-  }
-  
-}
 
 
 
@@ -197,7 +138,7 @@ mobile menu
 .container {
   background-image: url("img/background.png");
   background-repeat: no-repeat;
-  background-size: 140%;
+  /*background-size: 140%;*/
   padding: 60px;
 }
 
@@ -205,27 +146,12 @@ mobile menu
   width: 180px;
 }
 
-@media (min-width: 600px) {
-  .intro {
-    width: 85%;
-    padding-left: 50px;
-    margin: auto;
-  }
-  
-  .intro h1 {
-    font-size: 30px;
-    width: 250px;
-  }
-  
+.content {
+  margin-top: 60px;
 }
 
 .intro p {
   width: 40%;
-}
-
-.content {
-  margin-top: 60px;
-  width: 250px;
 }
 
 .content--header {
@@ -238,9 +164,12 @@ mobile menu
   background-color: #054060;
 }
 
+.content--column-2 .content--header {
+  top: -6px;
+}
+
 .transition {
   position: relative;
-  top: -6px;
   background: -webkit-linear-gradient(left, #f7c342 , #e15656); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #f7c342, #e15656); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, #f7c342, #e15656); /* For Firefox 3.6 to 15 */
@@ -252,7 +181,6 @@ mobile menu
 }
 
 .content--box {
-  position: relative;
   padding: 15px;
   background-color: #ccc;
 }
@@ -262,6 +190,24 @@ mobile menu
 }
 
 .content--box p {
+  color: #054060;
+  font-weight: 400;
+}
+
+.content--video-box h3 {
+  color: #054060;
+}
+
+.content--video-box p {
+  color: #054060;
+  font-weight: 400;
+}
+
+.content--event-box h3 {
+  color: #054060;
+}
+
+.content--event-box p {
   color: #054060;
   font-weight: 400;
 }
@@ -294,6 +240,7 @@ mobile menu
   top: -3px;
   background-color: #054060;
   text-align: center;
+  width: 250px;
 }
 
 .content--hospital {
@@ -301,14 +248,17 @@ mobile menu
 }
 
 .content--hospital-overlay {
-  top: -2px;
+  top: 0px;
   height: 190px;
-  padding-top: 30px;
+  padding-top: 50px;
+  text-align: center;
 }
 
 .content--event-box {
   background-color: #118db6;
-  top: -7px;
+  top: -6px;
+  position: relative;
+  padding: 15px;
 }
 
 .content--jobs {
@@ -319,5 +269,197 @@ mobile menu
   top: 0px;
   height: 168px;
   padding-top: 30px;
+  text-align: center;
+}
+
+
+/* ------------------------------------- full screen ------------------------------------------*/
+
+
+@media (min-width: 600px) {
+  
+  .header {
+    width: 750px;
+    margin: auto;
+  }
+
+  .menu {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .menu li {
+    float: right;
+    padding: 8px 20px 0px 0px;
+  }
+
+  .menu__item a {
+    display: block;
+    padding: 8px 0;
+    color: #054060;
+  }
+  
+  .intro {
+    width: 750px;
+    padding-left: 50px;
+    margin: auto;
+  }
+  
+  .intro h1 {
+    font-size: 30px;
+    width: 250px;
+  }
+  
+  .content {
+    /* margin-top: 111px; */
+    width: 750px;
+    margin: auto;
+    padding-top: 65px;
+  }
+  
+  .content--column-1 {
+    width: 500px;
+  }
+  
+  .content--column-1--top-section--row-1 {
+    position: relative;
+  }
+  
+  .content--box {
+    width: 250px;
+    height: 253px;
+  }
+  
+  .content--blue-box {
+    height: 190px;
+    padding-top: 30px;
+  }
+  
+  .content--hospital-overlay {
+    top: 0px;
+  }
+  
+  .content--column-2 .content--header {
+    top: 0px;
+  }
+  
+  .transition {
+    top: 0px;
+  }
+  
+  .content--video-box {
+    width: 250px;
+    height: 439px;
+    background-color: white;
+  }
+  
+  .date {
+    width: 50px;
+    text-align: center;    
+    margin: auto;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  
+  .date h3 {
+    color: white;
+    font-weight: 100;
+  }
+  
+  .date p {
+    color: white;
+    font-weight: 200;
+    padding: 0px 0px 5px;
+  }
+  
+  .date__top-border {
+    height: 2px;
+  }
+  
+  .date--content {
+    background-color: #054060;
+  }
+  
+  .content--event-box--info {
+    display: block;
+    overflow: hidden;
+  }
+  
+  .content--event-box {
+    height: 166px;
+  }
+  
+  .float__left {
+    float: left;
+  }
+  
+  .float__right {
+    float: right;
+  }
+  
+  .content--jobs-overlay {
+    left: 500px;
+    height: 168px;
+    padding-top: 3px;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  
+  .menu {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    left: 0;
+    top: 40px;
+    font-size: 18px;
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .menu__item {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu__item a {
+    color: white;
+    display: block;
+    padding: 8px 0;
+  }
+  
+  .intro p {
+    width: 75%;
+  }
+  
+  .content {
+    width: 250px;
+  }
+  
+  .content--box {
+    position: relative;
+  }
+  
+  .content--video-box {
+    position: relative;
+    background-color: #ccc;
+    top: -6px;
+  }
+  
+  .date {
+    visibility: hidden; 
+  }
 }
 
